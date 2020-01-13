@@ -5,10 +5,20 @@
 <title>LOGIN</title>
 </head>
 <body>
-	<form name="frmLogin" method="get" action="login4" encType="UTF-8">
+	<form name="frmLogin" method="get" action="login5" encType="UTF-8">
 		ID  : <input type="text" name="user_id"><br>
 		PWD : <input type="password" name="user_pwd"><br>
 		<input type="submit" value="LOGIN">&nbsp;<input type="reset" value="다시입력"> 
 	</form>
 </body>
+
+<script type="text/javascript">
+	function fn_validate(){
+		var frmLogin = document.frmLogin;
+		var user_id = frmLogin.user_id.value;
+		var user_pwd = frmLogin.user_pwd.value;
+		
+		alert(user_id);
+	}
+</script>
 </html>
