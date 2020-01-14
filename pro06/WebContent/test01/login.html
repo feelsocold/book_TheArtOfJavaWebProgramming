@@ -5,7 +5,7 @@
 <title>LOGIN</title>
 </head>
 <body>
-	<form name="frmLogin" method="get" action="login5" encType="UTF-8">
+	<form name="frmLogin" encType="UTF-8">
 		ID  &nbsp;: &nbsp;&nbsp; <input type="text" name="user_id"><br>
 		PWD : <input type="password" name="user_pwd"><br>
 		<input type="hidden" name="user_address" value="서울시 성북구" />
@@ -24,7 +24,7 @@
 			alert("아이디와 비밀번호는 필수 입니다.");
 		}else{
 			frmLogin.method="post";
-			frmLogin.action="login5";
+			frmLogin.action="/pro06/loginTest";
 			frmLogin.submit();
 		}		
 	}

@@ -27,10 +27,14 @@ public class LoginServlet5 extends HttpServlet {
 		
 		System.out.println("doHandle() 호출");
 		
-		String user_id = req.getParameter("user_id");
-		String user_pwd = req.getParameter("user_pwd");
-		System.out.println("아이디 : " + user_id);
-		System.out.println("비밀번호 : " + user_pwd);
+		String id = req.getParameter("user_id");
+		String pwd = req.getParameter("user_pwd");
+		String address = req.getParameter("user_address");
+		
+		System.out.println("아이디 : " + id);
+		System.out.println("비밀번호 : " + pwd);
+		System.out.println("주소 : " + address);
+		
 	}
 	
 	public void destroy() {
