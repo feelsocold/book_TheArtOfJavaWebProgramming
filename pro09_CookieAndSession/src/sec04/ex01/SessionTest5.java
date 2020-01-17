@@ -35,7 +35,10 @@ public class SessionTest5 extends HttpServlet {
 				if(user_id != null || user_id.equals("")) {
 					session.setAttribute("user_id", user_id);
 					String url = resp.encodeURL("login23");
-					out.println("<a href='login23'>로그인 상태 확인</a>");
+					
+					System.out.println("URL : " + url);
+					
+					out.println("<a href="+ url + ">로그인 상태 확인</a>");
 				}else {
 					out.print("<a href='login.html'>다시 로그인하세요</a>");
 					session.invalidate();
